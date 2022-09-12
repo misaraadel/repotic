@@ -1626,7 +1626,7 @@ footer .copyrights p {
     height: 100%;
     background: url("../images/navbar/logo.svg") bottom left/150px 100px no-repeat;
     opacity: 0.5;
-    bottom: 0px;
+    bottom: 60px;
     left: 0;
     z-index: -1;
   }
