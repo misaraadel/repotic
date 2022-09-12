@@ -333,7 +333,7 @@ ul {
   background-color: var(--light-color);
 }
 .navbar.scrolled {
-  padding: 10px 0px;
+  padding: 15px 0px;
   box-shadow: 0px 0px 10px rgba(117, 81, 146, 0.07);
 }
 .navbar.scrolled .brand-name img {
@@ -625,7 +625,7 @@ header .owl-dots {
      object-fit: contain;
 }
 .services .box-contain .box .contain {
-  width: calc(100% - 204px);
+  width: calc(100% - 200px);
 }
 .services .box-contain .box .contain h2 {
   font-size: 20px;
@@ -633,6 +633,9 @@ header .owl-dots {
   color: var(--dark-color);
   margin: 0px;
   text-align: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 .services .box-contain .box:hover .image-content::after {
   -webkit-animation: pulse-shadow 1.5s linear infinite alternate;
@@ -693,11 +696,11 @@ header .owl-dots {
 .services .service-contain::before {
   content: "";
   position: absolute;
-  width: 180px;
-  height: 180px;
+  width: 160px;
+  height: 160px;
   background: var(--secondary-color) url("../images/navbar/logo_icon.svg") center/100px 70px no-repeat;
-  top: calc(50% - 90px);
-  left: calc(50% - 90px);
+  top: calc(50% - 80px);
+  left: calc(50% - 80px);
   z-index: 9;
   pointer-events: none;
   -webkit-animation: pulse-shadow 1s linear infinite alternate;
@@ -740,7 +743,7 @@ header .owl-dots {
           margin-inline-end: 0px;
 }
 .projects .nav.nav-tabs li a {
-  min-width: 180px;
+  min-width: 170px;
   height: 70px;
   padding: 0px 10px !important;
   background-color: rgba(0, 74, 118, 0.06);
@@ -1430,12 +1433,12 @@ header .owl-dots {
 }
 .contact-us .contain {
   width: 100%;
-  padding: 50px 60px;
+  padding: 30px 80px;
   position: relative;
   z-index: 9;
   outline: 1px solid rgba(18, 53, 185, 0.06);
   border-radius: 30px;
-  background: var(--light-color) url("../images/contact/pattern.webp") center bottom/contain no-repeat;
+  background: var(--light-color) url("../images/contact/pattern.webp") center bottom/cover no-repeat;
 }
 .contact-us .contain .contact-box {
   -webkit-border-end: 1px solid rgba(0, 100, 173, 0.1);
@@ -1485,7 +1488,20 @@ header .owl-dots {
 footer {
   width: 100%;
   padding: 186px 0px 20px;
-  background: var(--third-color) url("../images/wait/pattern.svg") center/cover no-repeat;
+  background: var(--third-color);
+  position: relative;
+  z-index: 8;
+}
+footer::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url("../images/footer/footer_pattern.png") top right/cover no-repeat;
+  top: 0;
+  left: 0;
+  opacity: 0.2;
+  z-index: -1;
 }
 footer .contain {
   width: 100%;
