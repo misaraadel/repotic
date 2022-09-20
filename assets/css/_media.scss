@@ -1,3 +1,8 @@
+@media (max-width: 1300px) and (min-width: 1000px) {
+  header {
+    background-size: 100% 100% !important;
+  }
+}
 @media (max-width: 999px) {
   .navbar {
     .buttons-contain {
@@ -12,6 +17,11 @@
 
     .hamburger {
       display: block !important;
+    }
+
+    .service-drop-list,
+    .nav-link.arrow-contain::before {
+      display: none;
     }
 
     .nav-contain {
@@ -73,7 +83,7 @@
             width: 100%;
 
             &::after {
-              background-position: top right;
+              background-position: top right !important;
             }
           }
         }
@@ -142,6 +152,7 @@
     }
   }
 
+  .service-header,
   header {
     padding-top: 150px;
 
@@ -225,5 +236,58 @@
 
   .heading {
     margin-bottom: 40px;
+  }
+
+  .service-header {
+    padding-bottom: 50px !important;
+
+    h1 {
+      font-size: 30px !important;
+    }
+
+    .image-content {
+      height: 250px !important;
+    }
+  }
+
+  .about-serivce {
+    .image-content {
+      height: 250px !important;
+    }
+
+    .service-list-contain {
+      padding: 20px 10px !important;
+      border-radius: 20px !important;
+    }
+  }
+
+  .service-features {
+    padding-bottom: 40px !important;
+  }
+
+  .contact-us-form .image-content,
+  .more-service-feature .image-content {
+    height: 250px;
+  }
+
+  html[dir="ltr"] {
+    .navbar .nav-contain .navbar-nav {
+      right: unset !important;
+      left: -100%;
+
+      .close-navbar{
+        right: 15px !important;
+        left: unset !important;
+      }
+
+      &::after {
+        background-position: bottom right !important;
+      }
+    }
+
+    .active-nav .navbar-nav{
+      right: unset !important;
+      left: 0px !important; 
+    }
   }
 }
