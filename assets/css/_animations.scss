@@ -18,6 +18,13 @@
   }
 }
 
+@keyframes pulse-shadow-primary {
+  100% {
+    box-shadow: 0 0 0 10px rgba($color: #0064AD, $alpha: .06),
+                0 0 0 20px rgba($color: #0064AD, $alpha: .06);
+  }
+}
+
 @keyframes shadow {
   0% {
     box-shadow: 0px 0px 35px -4px rgba($color: #fff, $alpha: 0.5);
@@ -40,6 +47,18 @@
   }
   100% {
     opacity: 1;
+    transform: scale(1); 
+  } 
+}
+
+@keyframes zooming {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(.9); 
+  }
+  100% {
     transform: scale(1); 
   } 
 }
