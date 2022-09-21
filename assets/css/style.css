@@ -3028,6 +3028,10 @@ header .owl-stage {
   .about-serivce .image-content {
     height: 250px !important;
   }
+  .about-serivce .image-content img {
+    -o-object-position: center;
+       object-position: center;
+  }
   .about-serivce .service-list-contain {
     padding: 20px 10px !important;
     border-radius: 20px !important;
@@ -3038,6 +3042,11 @@ header .owl-stage {
   .contact-us-form .image-content,
 .more-service-feature .image-content {
     height: 250px;
+  }
+  .contact-us-form .image-content img,
+.more-service-feature .image-content img {
+    -o-object-position: center;
+       object-position: center;
   }
   .portfolio .owl-theme .owl-nav {
     position: relative;
