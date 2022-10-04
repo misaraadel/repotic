@@ -460,6 +460,15 @@
     }
   }
 
+  .customer-segment .customer-box .customer-img {
+    width: 140px;
+    height: 140px;
+  }
+
+  .partners .partner-box {
+    height: 110px;
+  }
+
   html[dir="ltr"] {
     .navbar .nav-contain .navbar-nav {
       right: unset !important;
