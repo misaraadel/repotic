@@ -712,21 +712,11 @@ html[dir=ltr] .single-product .product-list::after {
 
 header {
   width: 100%;
-  padding: 286px 0px 50px;
   position: relative;
 }
-header::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: url("../images/intro/intro.webp") top right/cover no-repeat;
-  top: 0;
-  left: 0;
-  z-index: -1;
-}
-header .owl-stage {
-  padding-bottom: 169px;
+header .item {
+  padding: 286px 0px 219px;
+  background: top right/cover no-repeat;
 }
 header .contain {
   width: 100%;
@@ -794,6 +784,9 @@ header .owl-dots {
   align-items: center;
   align-content: center;
   margin: 0px;
+  position: absolute;
+  bottom: 100px;
+  right: 15%;
 }
 
 .services {
@@ -2964,7 +2957,7 @@ footer .copyrights p {
 }
 
 @media (max-width: 1300px) and (min-width: 1000px) {
-  header {
+  header .item {
     background-size: 100% 100% !important;
   }
 }
@@ -3087,12 +3080,14 @@ footer .copyrights p {
     padding: 120px 20px 20px;
   }
   .service-header,
-header {
+header .item {
     padding-top: 150px;
   }
-  .service-header .owl-stage,
-header .owl-stage {
-    padding-bottom: 25px !important;
+  header .item {
+    padding-bottom: 100px;
+  }
+  header .owl-dots {
+    bottom: 30px;
   }
   .project-wait .project-contain {
     flex-direction: column !important;

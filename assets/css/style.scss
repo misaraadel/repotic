@@ -609,22 +609,11 @@ html[dir="ltr"] {
 
 header {
   width: 100%;
-  padding: 286px 0px 50px;
   position: relative;
 
-  &::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: url('../images/intro/intro.webp') top right / cover no-repeat;
-    top: 0;
-    left: 0;
-    z-index: -1;
-  }
-  
-  .owl-stage {
-    padding-bottom: 169px;
+  .item {
+    padding: 286px 0px 219px;
+    background: top right / cover no-repeat;
   }
 
   .contain {
@@ -700,6 +689,9 @@ header {
     align-items: center;
     align-content: center;
     margin: 0px;
+    position: absolute;
+    bottom: 100px;
+    right: 15%;
   }
 }
 
